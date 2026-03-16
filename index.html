@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blockchain Voting System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Online Voting System (Blockchain)</h1>
+
+<div class="box">
+<h2>Voter Login</h2>
+
+<input type="text" placeholder="Enter Voter ID"><br><br>
+
+<a href="vote.html">
+<button>Start Voting</button>
+</a>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vote</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Cast Your Vote</h1>
+
+<div class="box">
+
+<button onclick="vote('Candidate A')">Candidate A</button><br><br>
+
+<button onclick="vote('Candidate B')">Candidate B</button><br><br>
+
+<button onclick="vote('Candidate C')">Candidate C</button><br><br>
+
+<a href="result.html">
+<button>View Result</button>
+</a>
+
+</div>
+
+<script src="blockchain.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Results</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Voting Results</h1>
+
+<div class="box">
+
+<p id="A"></p>
+<p id="B"></p>
+<p id="C"></p>
+
+</div>
+
+<script>
+
+document.getElementById("A").innerHTML =
+"Candidate A Votes: " + localStorage.getItem("A");
+
+document.getElementById("B").innerHTML =
+"Candidate B Votes: " + localStorage.getItem("B");
+
+document.getElementById("C").innerHTML =
+"Candidate C Votes: " + localStorage.getItem("C");
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Results</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Voting Results</h1>
+
+<div class="box">
+
+<p id="A"></p>
+<p id="B"></p>
+<p id="C"></p>
+
+</div>
+
+<script>
+
+document.getElementById("A").innerHTML =
+"Candidate A Votes: " + localStorage.getItem("A");
+
+document.getElementById("B").innerHTML =
+"Candidate B Votes: " + localStorage.getItem("B");
+
+document.getElementById("C").innerHTML =
+"Candidate C Votes: " + localStorage.getItem("C");
+
+</script>
+
+</body>
+</html>
